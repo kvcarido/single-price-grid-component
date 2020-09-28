@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --light-cyan: hsl(179, 62%, 43%, 0.8);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --white: hsl(255, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--light-gray);
+  min-height: 100vh;
+  display: flex;
+}
+
+main {
+  background-color: var(--white);
+  max-width: 635px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 50px -20px grey;
+}
+
+.header {
+  padding: 2rem;
+}
+
+.row {
+  display: flex;
+}
+
+.row > section {
+  flex: 1;
+  padding: 2rem;
+}
+
+section.dark-cyan {
+  background-color: var(--cyan);
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+section.light-cyan {
+  background-color: var(--light-cyan);
+  color: var(--white);
+}
+
+h1 {
+  color: var(--cyan);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+h2.green-title {
+  color: var(--bright-yellow);
+  font-size: 1.1rem;
+}
+
+p.header-text {
+  color: var(--grayish-blue);
+  line-height: 0.8rem;
+}
+
+span.large-price {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+span.per-month {
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+
+button {
+  margin-top: 1rem;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--bright-yellow);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 50px -20px grey;
+  width: 100%;
+  height: 3rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+ul li {
+  line-height: 1.4rem;
+}
