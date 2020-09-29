@@ -21,11 +21,15 @@ html {
 body {
   background-color: var(--light-gray);
   min-height: 100vh;
+  padding: 0.5rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
   background-color: var(--white);
+  width: 635px;
   max-width: 635px;
   margin: auto;
   border-radius: 10px;
@@ -78,14 +82,20 @@ p.header-text {
   line-height: 0.8rem;
 }
 
+p.pricing {
+  display: flex;
+}
+
 span.large-price {
   font-size: 2rem;
   font-weight: 400;
 }
 
 span.per-month {
+  align-self: center;
   opacity: 0.5;
   font-size: 0.9rem;
+  padding-left: 0.5rem;
 }
 
 button {
@@ -110,4 +120,10 @@ ul {
 
 ul li {
   line-height: 1.4rem;
+}
+
+@media screen and (max-width: 375px) {
+  .row {
+    flex-direction: column;
+  }
 }
