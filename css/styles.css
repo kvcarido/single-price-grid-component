@@ -21,7 +21,7 @@ html {
 body {
   background-color: var(--light-gray);
   min-height: 100vh;
-  padding: 0.5rem;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,7 +79,7 @@ h2.green-title {
 
 p.header-text {
   color: var(--grayish-blue);
-  line-height: 0.8rem;
+  line-height: 1.7rem;
 }
 
 p.pricing {
@@ -98,7 +98,7 @@ span.per-month {
   padding-left: 0.5rem;
 }
 
-button {
+button.sign-up {
   margin-top: 1rem;
   font-family: "Karla", sans-serif;
   font-size: 1rem;
@@ -106,7 +106,7 @@ button {
   background-color: var(--bright-yellow);
   border: none;
   border-radius: 5px;
-  box-shadow: 0 5px 50px -20px grey;
+  box-shadow: 0 5px 25px -5px grey;
   width: 100%;
   height: 3rem;
 }
